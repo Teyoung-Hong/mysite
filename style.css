@@ -16,30 +16,29 @@ Version: 1.0
    black  : #566270
  */
 
-/* all */
 
 html{
   font-size: 20px;  
 }
 
 body{
-  font-family: 'serif', 'Times New Roman';
-  padding: 0 40px;
+}
+
+.clearfix::after {
+  display: block;
+  content: "";
+  clear: both;
 }
 
 header{
-  height: 60px;
-  line-height: 60px;
+  width: 100%;
+  height: 80px;
+  line-height: 80px;
   padding: 0 2rem;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 999;
+  background-color: #011627;
+  font-family: 'noto-sans', 'serif', 'Times New Roman';
+  padding: 0 40px;
 }
-/* all end */
-
-/* wrap */
 
 .wrap{
   width: 100%;
@@ -47,9 +46,11 @@ header{
 }
 
 .wrap_header{
-  background-color: #A593E0;
   height: 100%;
   padding: 0 2rem;
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .wrap_top{
@@ -57,8 +58,8 @@ header{
 }
 
 .wrap_bottom{
-  margin: 0 auto;
-  width:90%;
+  margin: 50px auto;
+  width:1200px;
 }
 
 .wrap_bottom--both{
@@ -71,7 +72,7 @@ header{
 }
 
 .wrap_bottom--right{
-  width: 30%;
+  width: 25%;
 }
 
 .wrap_tab{
@@ -94,7 +95,7 @@ header{
   width: 100%;
   height: 60px;
   line-height: 60px;
-  background-color: black;
+  background-color: #011627;
   text-align: center;
   color: white;
   position: fixed;
@@ -105,13 +106,10 @@ header{
   width: 50%;
   margin: 5rem auto;
 }
-/* wrap end */
-
-/* header */
 
 .header_title{
   margin-left: 10px;  
-  font-size: 1.2rem;
+  font-size: 1.8rem;
   font-weight: 600;
   float: left;
 }
@@ -137,80 +135,53 @@ header{
   cursor: pointer;
 }
 
-  /* search form */
 .form_search{
-  width: 30vw;
+  width: 100%;
   position: relative;
   display: flex;
+  margin-bottom: 50px;
 }
 
 .form_search--text{
   height: 30px;
+  width: 70%;
+  margin-right: 10%;
+  padding: 0 10px;
   font-size: 13px;
   border-style: none;
-  border-bottom: solid 1px black;
+  border-bottom: solid 1px #011627;
 }
 
 .form_search--submit{
-  width: 5vw;
-  height: 30px;
-  line-height: 30px;
-  border-style: none;
-  font-size: 20px;
-}
-
-
-  /* search form end */
-
-/* header end */
-
-
-/* top begin */
-
-.swiper-container{
-  width: 100%;
-  height: 50vh;  
-}
-
-.swiper-slide{
-  width: 40%;
-  background-size: cover;
-  background-position: center;
-}
-
-.swiper-filter{
-  background-color: rgba(0, 0, 0, 0.4);  
-  height: 100%;
-}
-
-.swiper-slide_content{
-  width: 80%;
-  height: 100%;
-  margin: 0 auto;
+  width: 25%; 
+  font-size: 15px;
+  background-color: #011627;
   color: white;
+  border-radius: 5px;
 }
 
-.swiper-slide_title{
-  height: 30%;
-  padding-top: 15%;
-  text-align: center;  
-}
-
-.swiper-slide_title a{
-  color: white;  
-}
-
-.swiper-slide_caption p{
-  line-height: 2rem;
-  text-align: left;  
+.widgettitle {
+  font-size: 1rem !important;
+  border-bottom: 3px solid #011627;
+  padding: 10px;
 }
 
 
-/* top end */
+.widget ul li {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
 
+.widget ul li:hover {
+  opacity: 65%;
+}
 
-/* bottom begin */
-  /* tab begin */
+.widget ul li a {
+  color: #090707; 
+  font-size: 15px;
+}
+
 .tab_items{
   display: flex;  
   width: 100%;
@@ -229,9 +200,7 @@ header{
 .category-list__item a{
   color: #A593E0;
 }
-  /* tab end */
 
-  /* archives begin */
 .archives_inner{
   margin: 0 auto;
 }
@@ -243,99 +212,35 @@ header{
 }
 
 .archives{
-  width: 15rem;
-  height: 15rem;  
-  box-shadow: 8px 8px 10px lightgray;
-  margin: 0 50px;
+  width: 12rem;
+  height: 12rem;  
+  box-shadow: 1rem 1rem 1rem darkgray;
+  margin: 0 20px;
   border-radius: 1rem 1rem 1rem 1rem;
   background-position: center;
   background-size: cover;
+  position: relative;
 }
+
 
 .archives__filter{
   background-color: black;
-  opacity: 0.5;
+  opacity: 0.8;
   padding: 1rem;
-  border-radius: 1rem 1rem 1rem 1rem;
   width: 100%;
-  height: 100%;
+  height: 35%;
+  position: absolute;
+  bottom: 0;
+  border-bottom-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
 }
 
 .archives__title{
-  font-size: 1.3rem;  
+  font-size: 0.9rem;  
+  line-hgith: 1.2rem;
   margin-bottom: 1rem;
 }
 
-.archives__content{
-  line-height: 1.5rem;
-  color: white;
-}
-  /* archives end */
-  /* about */
-
-.about_common{
-  width: 50vw;
-  height: 60vh;
-  text-align: center;
-  line-height: 60vh;  
-}
-
-.about_left{
-  background-color: black;
-  color: white;
-}
-
-.about_left:hover{
-  background-color: rgba(0,0,0,0.7);
-}
-
-.about_right{
-    
-}
-  /* about end */
-  /* contact */
-
-.contact label{
-  font-size: 0.8rem;  
-  margin-bottom: 0.8rem;
-}
-
-.contact input, .contact textarea{
-  border: none;
-  background-color: lightgray;
-  font-size: 1rem;  
-  padding: 0.5rem;
-}
-
-.contact input{
-  height: 2rem;  
-}
-
-.contact textarea{
-  height: 3rem;  
-}
-
-.contact_tf{
-  margin: 0.5rem 0;
-  width: 50vw;  
-}
-  /* contact end */
-
-/* bottom right */
 .widget{
   margin-bottom: 1rem;  
 }
-
-.widgettitle{
-  font-size: 1.5rem;
-  line-height: 2rem;  
-}
-/* bottom right end*/
-
-/* bottom end */
-
-
-/* footer begin */
-/* footer end */
-
-

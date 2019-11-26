@@ -3,44 +3,34 @@
 <head>
   <meta charset="<?php bloginfo('charet'); ?>" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Teyoung's media</title>
+  <title>Code Hospital</title>
 
   <!-- stylesheet -->
   <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>">
-  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/static/css/reset.css" type="text/css" />
-  <?php if (is_single()): ?>
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/static/css/single.css" type="text/css" />
-  <?php endif; ?>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css" />
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/reset.css" type="text/css" />
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/single.css" type="text/css" />
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+  <!-- links -->
+  <script data-ad-client="ca-pub-8287269453823622" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
   <?php wp_head(); ?>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-130548866-4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-130548866-4');
+</script>
+
 </head>
 <body <?php body_class(); ?>>
   <!-- header -->
   <header>
-    <div class="wrap_header">
-      <div class="header_title">
-        <a href="<?php echo home_url(); ?>">Teyoung's media</a>
-      </div>
-      <nav class="header_nav">
-        <ul class="header_nav--lists">
-          <li class="header_nav--list"><a href="<?php echo get_template_directory_uri(); ?>/about">News</a></li>
-          <li class="header_nav--list"><a href="<?php 
-            if (is_home()){
-              echo "#about";
-            } else {
-              echo "";
-            }
-           ?>">About</a></li>
-          <li class="header_nav--list"><a href="
-          <?php
-            if (is_home()){
-              echo "#contact";  
-            } else {
-              echo "";  
-            }
-          ?>
-          ">Contact</a></li>
-        </ul>
-      </nav>
+    <div class="wrap_header clearfix">
+      <div class="header_title"><a href="<?php echo home_url(); ?>">Code Hospital</a></div>
     </div>
   </header>
