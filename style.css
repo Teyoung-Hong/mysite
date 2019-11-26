@@ -1,0 +1,273 @@
+/*
+Theme Name: TeyoungMedia
+Author: Teyoung Hong
+Description: Not that good I guess.
+Version: 1.0
+*/
+
+/* 
+・BEMを採用
+・block名の先頭にはwrapをつける
+・BLOCK_ELEMENT-MODIFIER
+・colors
+   perple : #A593E0
+   white  : #FFFFF3
+   gray   : #E0E3DA
+   black  : #566270
+ */
+
+/* all */
+
+html{
+  font-size: 20px;  
+}
+
+body{
+  font-family: 'noto-sans', 'serif', 'Times New Roman';
+  padding: 0 40px;
+}
+
+.clearfix::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+header{
+  width: 100%;
+  height: 80px;
+  line-height: 80px;
+  padding: 0 2rem;
+  background-color: #011627;
+}
+/* all end */
+
+/* wrap */
+
+.wrap{
+  width: 100%;
+  margin-bottom: 2rem;  
+}
+
+.wrap_header{
+  height: 100%;
+  padding: 0 2rem;
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.wrap_top{
+  margin-top: 5rem;
+}
+
+.wrap_bottom{
+  margin: 50px auto;
+  width:1200px;
+}
+
+.wrap_bottom--both{
+  width: 100%;
+  display: flex;  
+}
+
+.wrap_bottom--left{
+  width: 75%;
+}
+
+.wrap_bottom--right{
+  width: 25%;
+}
+
+.wrap_tab{
+  display: flex;
+  padding: 0 2rem;
+}
+
+.wrap_archives{
+}
+
+.wrap_about{
+  display: flex;  
+}
+
+.wrap_contact{
+  padding: 0 2rem;
+}
+
+.wrap_footer{
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  background-color: #011627;
+  text-align: center;
+  color: white;
+  position: fixed;
+  bottom: 0;
+}
+
+.wrap__main{
+  width: 50%;
+  margin: 5rem auto;
+}
+/* wrap end */
+
+/* header */
+
+.header_title{
+  margin-left: 10px;  
+  font-size: 1.8rem;
+  font-weight: 600;
+  float: left;
+}
+
+.header_title a, .header_nav a{
+  color: #FFFFF3;
+}
+
+.header_nav{
+  float: right;
+}
+
+.header_nav--lists{
+  display: flex;  
+}
+
+.header_nav--list{
+  margin-right: 20px;  
+}
+
+.header_nav--list:hover{
+  color: rgba(0,0,0,0.7);  
+  cursor: pointer;
+}
+
+  /* search form */
+.form_search{
+  width: 100%;
+  position: relative;
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.form_search--text{
+  height: 30px;
+  width: 70%;
+  margin-right: 10%;
+  padding: 0 10px;
+  font-size: 13px;
+  border-style: none;
+  border-bottom: solid 1px #011627;
+}
+
+.form_search--submit{
+  width: 25%; 
+  font-size: 15px;
+  background-color: #011627;
+  color: white;
+  border-radius: 5px;
+}
+  /* search form end */
+
+/* widget */
+.widgettitle {
+  font-size: 1rem !important;
+  border-bottom: 3px solid #011627;
+  padding: 10px;
+}
+
+
+.widget ul li {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.widget ul li:hover {
+  opacity: 65%;
+}
+
+.widget ul li a {
+  color: #090707; 
+  font-size: 15px;
+}
+/* widget end */
+
+/* header end */
+
+
+/* top end */
+
+
+/* bottom begin */
+  /* tab begin */
+.tab_items{
+  display: flex;  
+  width: 100%;
+  height:80px;
+  line-height: 80px;
+}
+
+.tab_item{
+  margin-right: 20px  
+}
+
+.category-list__item{
+  margin-right: 1rem;  
+}
+
+.category-list__item a{
+  color: #A593E0;
+}
+  /* tab end */
+
+  /* archives begin */
+.archives_inner{
+  margin: 0 auto;
+}
+
+.archives_row{
+  display: flex;  
+  margin-bottom: 50px;
+  justify-content: center;
+}
+
+.archives{
+  width: 12rem;
+  height: 12rem;  
+  box-shadow: 1rem 1rem 1rem darkgray;
+  margin: 0 20px;
+  border-radius: 1rem 1rem 1rem 1rem;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+
+.archives__filter{
+  background-color: black;
+  opacity: 0.8;
+  padding: 1rem;
+  width: 100%;
+  height: 35%;
+  position: absolute;
+  bottom: 0;
+  border-bottom-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+
+.archives__title{
+  font-size: 0.9rem;  
+  line-hgith: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+  /* archives end */
+
+/* bottom right */
+.widget{
+  margin-bottom: 1rem;  
+}
+
+/* bottom right end*/
+/* bottom end */
