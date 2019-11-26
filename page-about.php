@@ -1,6 +1,6 @@
 <?php  
 /*
-Template Name: 自己紹介
+Template Name: abou me
  
 */
 
