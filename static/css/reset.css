@@ -64,6 +64,8 @@ a {
   font-size:100%;
   vertical-align:baseline;
   background:transparent;
+  color: #FFFFF3;  
+  text-decoration: none;
 }
 
 ins {
@@ -116,6 +118,4 @@ img {
 }
 
 a{
-  color: black;  
-  text-decoration: none;
 }

@@ -9,6 +9,11 @@ Version: 1.0
 ・BEMを採用
 ・block名の先頭にはwrapをつける
 ・BLOCK_ELEMENT-MODIFIER
+・colors
+   perple : #A593E0
+   white  : #FFFFF3
+   gray   : #E0E3DA
+   black  : #566270
  */
 
 /* all */
@@ -21,6 +26,17 @@ body{
   font-family: 'serif', 'Times New Roman';
   padding: 0 40px;
 }
+
+header{
+  height: 60px;
+  line-height: 60px;
+  padding: 0 2rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
 /* all end */
 
 /* wrap */
@@ -31,15 +47,9 @@ body{
 }
 
 .wrap_header{
-  height: 60px;
-  line-height: 60px;
+  background-color: #A593E0;
+  height: 100%;
   padding: 0 2rem;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 999;
-  background-color: white;
 }
 
 .wrap_top{
@@ -48,6 +58,7 @@ body{
 
 .wrap_bottom{
   margin: 0 auto;
+  width:90%;
 }
 
 .wrap_bottom--both{
@@ -86,28 +97,27 @@ body{
   background-color: black;
   text-align: center;
   color: white;
+  position: fixed;
+  bottom: 0;
+}
+
+.wrap__main{
+  width: 50%;
+  margin: 5rem auto;
 }
 /* wrap end */
 
 /* header */
-
-.header_logo{
-  width: 60px;
-  height: 100%;  
-  float: left;
-}
-
-.header_logo--img{
-  max-width: 100%;
-  height: 100%;
-  text-align: center;  
-}
 
 .header_title{
   margin-left: 10px;  
   font-size: 1.2rem;
   font-weight: 600;
   float: left;
+}
+
+.header_title a, .header_nav a{
+  color: #FFFFF3;
 }
 
 .header_nav{
@@ -212,8 +222,12 @@ body{
   margin-right: 20px  
 }
 
-.category--list_item{
-  margin-right: 2rem;  
+.category-list__item{
+  margin-right: 1rem;  
+}
+
+.category-list__item a{
+  color: #A593E0;
 }
   /* tab end */
 
@@ -228,25 +242,33 @@ body{
   justify-content: center;
 }
 
-.archives_item{
-  width: 25vw;
-  height: 25vw;  
-  box-shadow: 5px 5px 10px lightgray;
-  border: solid 1px black;
+.archives{
+  width: 15rem;
+  height: 15rem;  
+  box-shadow: 8px 8px 10px lightgray;
   margin: 0 50px;
   border-radius: 1rem 1rem 1rem 1rem;
-  padding: 1rem;
   background-position: center;
   background-size: cover;
 }
 
-.archives_item--title{
+.archives__filter{
+  background-color: black;
+  opacity: 0.5;
+  padding: 1rem;
+  border-radius: 1rem 1rem 1rem 1rem;
+  width: 100%;
+  height: 100%;
+}
+
+.archives__title{
   font-size: 1.3rem;  
   margin-bottom: 1rem;
 }
 
-.archives_item--content{
+.archives__content{
   line-height: 1.5rem;
+  color: white;
 }
   /* archives end */
   /* about */
@@ -315,4 +337,5 @@ body{
 
 /* footer begin */
 /* footer end */
+
 

@@ -77,9 +77,11 @@ get_header();
              while ( have_posts() ) : the_post();
             $counter++;
         ?>
-        <section class="archives_item" style="background-image: url('<?php the_post_thumbnail_url(); ?>');">
-          <h2 class="archives_item--title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-          <div class="archives_item--content"><?php the_excerpt(); ?></div>
+        <section class="archives" style="background-image: url('<?php the_post_thumbnail_url(); ?>');">
+          <div class="archives__filter">
+            <h2 class="archives__title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+            <div class="archives__content"><?php the_excerpt(); ?></div>
+          </div>
         </section>
         <?php if($counter%2==0){
           echo ('</div><div class="archives_row">');  
@@ -115,7 +117,7 @@ get_header();
     <?php echo do_shortcode( '[contact-form-7 id="12" title="コンタクトフォーム 1"]' ); ?>
   </div>
   <!-- contact end -->
-</div><!-- bottom end -->
+</div><!-- wrap_bottom end -->
 </main>
 
 <!-- footer begin -->
