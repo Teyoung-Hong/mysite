@@ -41,6 +41,7 @@ body {
 article, aside, dialog, figure, footer, header,
 hgroup, nav, section {
   display:block;
+  box-sizing: border-box;
 }
 
 nav ul {
