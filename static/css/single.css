@@ -1,0 +1,28 @@
+.post__title{
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.wrap__main time{
+  opacity: 0.3;
+  font-size: 0.8rem;
+}
+
+.post__body p{
+  line-height: 1.5rem;
+  margin: 1rem 0;  
+  font-size: 0.9rem;
+  color: #566270;
+}
+
+.post__body h2{
+  font-size: 1.3rem;
+  margin: 1.5rem 0;
+  line-height: 1.5rem;
+}
+
+.post_category a{
+  display: block;
+  text-align: center;
+  font-sizE: 1.7rem;
+}
