@@ -8,11 +8,21 @@ get_header();
 
 ?>
 
-<p>
-Call me Steve Son Hong
-<br>
-I'll call bitch.
+<div class="about">
+  <div class="about__top">
+    <div class="about__top--content">
+      <div class="about__top--title">Teyoung Hong</div>
+      <div class="about__top--subtitle">An ARTIST with TECH</div>
+    </div>
+  </div>
+  <div class="about__main">
+    <div class="about__nav">
+      <ul class="">
+      
+      </ul>
+    </div> 
+  </div>
+</div>
 
-</p>
-
+  <div class=""></div>
 <?php get_footer(); ?>
