@@ -3,7 +3,7 @@
 <head>
   <meta charset="<?php bloginfo('charet'); ?>" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Code Hospital</title>
+  <title>Lish</title>
 
   <!-- stylesheet -->
   <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>">
