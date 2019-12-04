@@ -31,7 +31,7 @@
   <!-- header -->
   <header>
     <div class="wrap_header clearfix">
-      <div class="header_title"><a href="<?php echo home_url(); ?>">Code Hospital</a></div>
+      <div class="header_title"><a href="<?php echo home_url(); ?>">Lish</a></div>
       <a href="<?php echo home_url('/about'); ?>" style="color: white;">About</a>
     </div>
   </header>
