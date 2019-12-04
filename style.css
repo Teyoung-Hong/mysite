@@ -25,6 +25,10 @@ body{
   position: relative;
 }
 
+main{
+  min-height: 95vh;
+}
+
 .clearfix::after {
   display: block;
   content: "";
