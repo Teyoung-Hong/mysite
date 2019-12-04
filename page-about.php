@@ -65,7 +65,7 @@ get_header();
       <h2 class="about__content--title">Contact</h2>
       <div class="about__content--body">
         <p class="about__content--subtitle">コンタクトフォーム 作成中</p>
-        <p class="about__content--sentence">テレパシーでお願いします。</p>
+        <p class="about__content--sentence">[contact-form-7 id="6" title="お仕事依頼"]</p>
       </div>
     </div>
   </div>
