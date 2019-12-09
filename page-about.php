@@ -80,7 +80,7 @@ get_header();
     <div id="contact" class="about__content contact">
       <h2 class="about__content--title">Contact</h2>
       <div class="about__content--body">
-        <p class="about__contact-wrapper"><?php echo do_shortcode('[contact-form-7 id="12" title="コンタクトフォーム 1"]'); ?></p>
+        <p class="about__contact-wrapper"><?php echo do_shortcode('[contact-form-7 id="6" title="お仕事依頼"]'); ?></p>
       </div>
     </div>
   </div>
