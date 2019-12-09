@@ -1,3 +1,5 @@
+@charset "utf-8";
+
 /*
 Theme Name: TeyoungMedia
 Author: Teyoung Hong
@@ -15,6 +17,16 @@ Version: 1.0
    gray   : #E0E3DA
    black  : #566270
  */
+
+
+/*=======================================
+インポートファイル
+========================================*/
+// 優先順位があるので並び替えはしないこと
+@import "reset.css";
+
+@import "_about.scss";
+@import "_single.scss";
 
 
 html{
@@ -250,64 +262,17 @@ header{
 }
 
 /* about */
-.about__top{
-  width: 100vw;
-  height: 100vh;
-}
 
-.about__top--content{
-  width: 60vw;
-  height: 60vh;
-  margin: 20vh auto;
-  text-align: center;
-}
 
-.about__top--title{
-  height: 40vh;
-  line-height: 40vh;
-  font-size: 60px;
-}
 
-.about__top--subtitle{
-  height: 20vh;
-}
 
-.about__nav{
-  width: 100vw;
-  height: 50px;
-  line-height: 50px;
-  padding: 0 10vw;
-  display: flex;
-}
 
-.about__nav--item{
-  width: 12vw;
-  margin: 0 2vw;
-  text-align: center;
-}
 
-.about__nav--item:hover{
-  opacity: 0.7;
-  cursor: pointer;
-}
 
-.about__content{
-  width: 60%;
-  margin: 0 auto;
-}
 
-.about__content--title{
-  margin: 90px auto;
-  text-align: center;
-}
 
-.about__content--subtitle{
-  font-size: 30px;
-  font-weight: 600;
-  margin: 30px 0;
-}
 
-.about__content--sentence{
-    line-height:40px;
-    padding: 0 20px;
-}
+
+
+
+

@@ -1,0 +1,142 @@
+@charset "utf-8";
+
+.nav__fixed{
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+
+
+.about{
+  padding-bottom: 60px;
+}
+
+.about__top{
+  width: 100vw;
+  height: 100vh;
+}
+
+.about__top--content{
+  width: 60vw;
+  height: 60vh;
+  margin: 20vh auto;
+  text-align: center;
+}
+
+.about__top--title{
+  height: 40vh;
+  line-height: 40vh;
+  font-size: 60px;
+  animation-duration: 5s;
+}
+
+.about__top--subtitle{
+  height: 20vh;
+  animation-delay: 1s;
+}
+
+.about__top--down{
+  color: black;  
+  animation-duration: 5s;
+  animation-delay: 1.5s;
+}
+
+.about__nav{
+  width: 100vw;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 10vw;
+  display: flex;
+}
+
+.about__nav--item{
+  width: 12vw;
+  margin: 0 2vw;
+  text-align: center;
+}
+
+.about__nav--item:hover{
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.about__content{
+  width: 60%;
+  margin: 0 auto;
+}
+
+.about__content--title{
+  margin: 90px auto;
+  font-size: 30px;
+  text-align: center;
+}
+
+.about__content--subtitle{
+  font-size: 25px;
+  font-weight: 600;
+  margin: 30px 0;
+}
+
+.about__content--subtitle a, .about__feature a{
+  color: black;
+}
+
+.about__content--sentence{
+  line-height:40px;
+  padding: 0 20px;
+}
+
+.textfield, .textarea{
+  font-size: 18px;
+  padding: 10px;
+}
+
+.textfield{
+  border-style: none;
+  border-bottom: 1px solid dimgray;
+}
+
+.contact_tf{
+  margin-bottom: 30px;
+}
+
+.wpcf7-submit{
+  height: 40px;
+  background: #011627;
+  border-radius: 10px;
+  font-size: 15px;
+  color: white;
+  border: none; 
+}
+
+#dropdown{
+  height:40px;
+  font-size: 15px;
+}
+
+.about__feature{
+  margin-bottom: 20px;
+  margin-left: 15px;
+}
+
+.about__feature:hover{
+  opacity: 0.7;
+}
+
+@media screen and (max-width: 780px) {
+
+.about__top--title{
+  font-size: 35px;
+}
+
+.about__nav{
+  display: none;
+}
+
+.about__content{
+  width: 90%;
+}
+
+
+}
